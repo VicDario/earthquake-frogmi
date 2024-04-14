@@ -17,6 +17,7 @@ module TechnicalTestFrogmi
     config.autoload_lib(ignore: %w(assets tasks))
     config.autoload_paths << Rails.root.join('lib')
     config.autoload_paths << Rails.root.join('services')
+    config.autoload_paths << Rails.root.join('repositories')
 
 
     # Configuration for the application, engines, and railties goes here.
