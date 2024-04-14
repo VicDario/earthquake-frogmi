@@ -13,7 +13,7 @@
 ActiveRecord::Schema[7.1].define(version: 2024_04_13_044345) do
   create_table "earthquakes", force: :cascade do |t|
     t.string "external_id"
-    t.string "type"
+    t.string "kind"
     t.decimal "magnitude"
     t.string "place"
     t.string "time"
