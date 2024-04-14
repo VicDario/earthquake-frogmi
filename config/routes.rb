@@ -7,6 +7,9 @@ Rails.application.routes.draw do
     namespace :earthquakes do
       get "/" => "earthquake#index", as: :earthquake_data
     end
+    namespace :comments do
+      post "/" => "comment#create", as: :save_comment
+    end
   end
 
   # Defines the root path route ("/")
