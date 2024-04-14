@@ -12,6 +12,7 @@ class EarthquakeDataServiceTest < ActiveSupport::TestCase
   test "Process GeoJSON correctly" do
     earthquake_mock = {
         "id" => "us7000d3yv",
+        "type" => "Feature",
         "properties" => {
             "mag" => 4.5,
             "place" => "10 km S of Guánica, Puerto Rico",

@@ -8,7 +8,7 @@ class EarthquakeTest < ActiveSupport::TestCase
       title: 'M 1.3 - 7 km NW of The Geysers, CA',
       place: '7 km NW of The Geysers, CA',
       mag_type: 'md',
-      type: 'Feature',
+      kind: 'feature',
       magnitude: 2.0,
       longitude: -122.8130035,
       latitude: 38.8203316,
