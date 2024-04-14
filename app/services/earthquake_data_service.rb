@@ -19,7 +19,8 @@ class EarthquakeDataService
             title: earthquake['properties']['title'],
             longitude: earthquake['geometry']['coordinates'][0],
             latitude: earthquake['geometry']['coordinates'][1],
-            external_url: earthquake['properties']['url']
+            external_url: earthquake['properties']['url'],
+            kind: earthquake['type'].downcase
         }
         earthquakes << earthquake_data
         end
