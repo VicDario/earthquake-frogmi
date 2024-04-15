@@ -3,8 +3,8 @@ class CommentRepository
         Comment.create(comment_data)
     end
 
-    def self.get_by_earthquake_id(feature_id)
-        comments = Comment.where(earthquake_id: feature_id)
+    def self.get_by_feature_id(feature_id)
+        comments = Comment.where(feature_id: feature_id)
         comments.map(&:serialize)
     end
 end
