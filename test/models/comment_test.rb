@@ -3,7 +3,7 @@ require "test_helper"
 class CommentTest < ActiveSupport::TestCase
   test "create valid record successfully" do
     comment = Comment.new(
-      earthquake_id: 1,
+      feature_id: 1,
       body: "This is a comment"
     )
     assert_instance_of Comment, comment, "Record is not an instance of Comment"
@@ -12,7 +12,7 @@ class CommentTest < ActiveSupport::TestCase
 
   test "Body cannot be blank" do
     comment = Comment.new(
-      earthquake_id: 1,
+      feature_id: 1,
       body: ""
     )
     assert_not comment.valid?, "Record was valid"

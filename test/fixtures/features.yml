@@ -12,3 +12,16 @@ one:
   longitude: -122.8130035
   latitude: 38.8203316
   tsunami: false
+
+two:
+  id: 2
+  external_id: 'nctest_2'
+  external_url: 'https://www.test2.com'
+  title: 'M 2.5 - 5 km NE of Mayagüez, Puerto Rico'
+  place: '5 km NE of Mayagüez, Puerto Rico'
+  mag_type: 'md'
+  kind: 'feature'
+  magnitude: 5.0
+  longitude: -102.8130035
+  latitude: 82.8203316
+  tsunami: true
