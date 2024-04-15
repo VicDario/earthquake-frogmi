@@ -8,6 +8,7 @@ Rails.application.routes.draw do
       get "/" => "earthquake#index", as: :earthquake_data
     end
     namespace :comments do
+      get "/" => "comment#index", as: :comment_by_earthquake
       post "/" => "comment#create", as: :save_comment
     end
   end
