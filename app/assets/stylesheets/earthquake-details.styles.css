@@ -1,0 +1,45 @@
+.page-details {
+    display: flex;
+    flex-direction: column;
+}
+.page-details div {
+    width: 100%;
+}
+
+.button-back {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.list-none {
+    list-style: none;
+}
+
+.comment-input-box {
+    display: flex;
+    flex-direction: row;
+}
+.comments-list {
+    padding: 0;
+}
+.comment-date {
+    font-size: 10px;
+    color: #757575;
+}
+
+@media screen and (min-width: 900px) {
+    .page-details {
+        flex-direction: row;
+    }
+    
+    .page-details div {
+        width: 50%;
+    }
+}
