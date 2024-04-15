@@ -18,7 +18,7 @@ export default function EarthquakeList(){
     }
     async function fecthEarthquakes() {
         setLoading(true);
-        const request = await fetch(`/api/earthquakes?page=${pagination.page}&per_page=${pagination.per_page}`);
+        const request = await fetch(`/api/features?page=${pagination.page}&per_page=${pagination.per_page}`);
         const response = await request.json();
         setEarthquakes(response.data);
         setLoading(false);
