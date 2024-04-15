@@ -1,7 +1,7 @@
 class CreateComments < ActiveRecord::Migration[7.1]
   def change
     create_table :comments do |t|
-      t.references :earthquake, null: false, foreign_key: true
+      t.references :feature, null: false, foreign_key: true
       t.text :body
 
       t.timestamps

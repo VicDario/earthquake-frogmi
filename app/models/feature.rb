@@ -1,4 +1,4 @@
-class Earthquake < ApplicationRecord
+class Feature < ApplicationRecord
     validates :magnitude, inclusion:
         { in: -1.0..10.0, message: "must be between -1.0 and 10.0" }
     validates :latitude, numericality:
