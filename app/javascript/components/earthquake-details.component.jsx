@@ -9,7 +9,7 @@ export default function EarthquakeList(){
     }, [location.state])
 
     async function getComments() {
-        const request = await fetch(`/api/comments?earthquake_id=${location.state.id}`);
+        const request = await fetch(`/api/comments?feature_id=${location.state.id}`);
         const response = await request.json();
         setComments(response);
     }
@@ -22,7 +22,7 @@ export default function EarthquakeList(){
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                earthquake_id: location.state.id,
+                feature_id: location.state.id,
                 body: comment
             })
         });
