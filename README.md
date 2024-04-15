@@ -33,3 +33,4 @@ curl -X GET \
 -H 'Content-Type: application/vnd.api+json' \
 -H 'cache-control: no-cache'
 
+7. Este proyecto cuenta con test ```rails test```
