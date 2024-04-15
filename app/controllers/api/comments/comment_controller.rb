@@ -9,7 +9,7 @@ class Api::Comments::CommentController < ApplicationController
       return
     end
 
-    comments = CommentRepository.get_by_earthquake_id(feature_id)
+    comments = CommentRepository.get_by_feature_id(feature_id)
     render json: comments
   end
 
@@ -24,10 +24,6 @@ class Api::Comments::CommentController < ApplicationController
 
   private
   def comment_payload
-    payload = {
-      earthquake_id: params[:feature_id],
-      body: params[:body],
-    }
-    payload
+    params.require(:comment).permit(:body, :feature_id)
   end
 end
