@@ -52,13 +52,6 @@
 }
 
 @media screen and (min-width: 900px) {
-    .list-element {
-        flex-direction: row;
-    }
-    .list-element p {
-        text-align: justify;
-        width: 25%;
-    }
     .pagination-container {
         justify-content: right;
     }
